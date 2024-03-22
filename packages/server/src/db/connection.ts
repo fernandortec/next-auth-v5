@@ -1,7 +1,7 @@
-import { neon, type NeonQueryFunction } from "@neondatabase/serverless";
+import { type NeonQueryFunction, neon } from "@neondatabase/serverless";
 
+import { env } from "@repo/schemas";
 import { drizzle } from "drizzle-orm/neon-http";
-import { env } from "../env";
 
 const connection: NeonQueryFunction<boolean, boolean> = neon(env.DATABASE_URL);
 

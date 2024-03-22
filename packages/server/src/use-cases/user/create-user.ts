@@ -1,16 +1,16 @@
-import { eq } from "drizzle-orm";
-import type { RegisterUserSchema } from "../../../schemas/register-user-schema";
-import { db } from "../../db/connection";
-import { users } from "../../db/schema/user";
+import { db } from "@/db/connection";
+import { users } from "@/db/schema/user";
+import { RegisterUserSchema } from "@repo/schemas";
 
 export async function createUser({
 	email,
 	name,
 	password,
 }: RegisterUserSchema) {
-	const [user] = await db.insert(users).values({ email, name, password });
-
-	// await db.insert(users).values({email,emailVerified,emailVerified2,id,name,password})
+	const [user] = await db
+		.insert(users)
+		.values({ email, name, password })
+		.returning();
 
 	return user;
 }

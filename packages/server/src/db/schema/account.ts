@@ -1,5 +1,5 @@
-import type { AdapterAccount } from "@auth/core/adapters";
 import { createId } from "@paralleldrive/cuid2";
+import type { AdapterAccountType } from "@repo/schemas";
 import { integer, pgTable, text } from "drizzle-orm/pg-core";
 import { users } from "./user";
 
@@ -8,7 +8,7 @@ export const accounts = pgTable("account", {
 		.$defaultFn(() => createId())
 		.primaryKey(),
 
-	type: text("type").$type<AdapterAccount["type"]>().notNull(),
+	type: text("type").$type<AdapterAccountType>().notNull(),
 	scope: text("scope"),
 	id_token: text("id_token"),
 	provider: text("provider").notNull().unique(),
