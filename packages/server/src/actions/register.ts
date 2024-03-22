@@ -1,13 +1,10 @@
 "use server";
 
-import { hash } from "bcryptjs";
+import { hash } from "bcrypt-ts";
 
-import {
-	type RegisterUserSchema,
-	registerUserSchema,
-} from "../../schemas/register-user-schema";
-import { createUser } from "../use-cases/user/create-user";
-import { getUserByEmail } from "../use-cases/user/get-user";
+import { createUser } from "@/use-cases/user/create-user";
+import { getUserByEmail } from "@/use-cases/user/get-user";
+import { type RegisterUserSchema, registerUserSchema } from "@repo/schemas";
 
 export const registerUser = async (values: RegisterUserSchema) => {
 	const validatedFields = registerUserSchema.safeParse(values);

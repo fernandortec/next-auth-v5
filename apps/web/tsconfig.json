@@ -5,7 +5,9 @@
 			{
 				"name": "next"
 			}
-		]
+		],
+		"declaration": false,
+		"declarationMap": false
 	},
 	"include": [
 		"next-env.d.ts",
@@ -14,5 +16,10 @@
 		"**/*.tsx",
 		".next/types/**/*.ts"
 	],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules"],
+	"paths": {
+		"@/*": ["./src/*"],
+		"@/auth": ["./auth.ts"],
+		"@/routes": ["./routes.ts"]
+	},
 }
