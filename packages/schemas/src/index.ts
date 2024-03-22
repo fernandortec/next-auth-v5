@@ -1,2 +1,2 @@
-export const opa = "opa";
-export const ashuashu = 'opa'
+export * from "./login-schema";
+export * from "./register-user-schema";
