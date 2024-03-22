@@ -1,6 +1,6 @@
 import { db } from "@/db/connection";
 import { users } from "@/db/schema/user";
-import { RegisterUserSchema } from "@repo/schemas";
+import type { RegisterUserSchema } from "@repo/schemas";
 
 export async function createUser({
 	email,
