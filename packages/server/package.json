@@ -10,9 +10,10 @@
 		"typescript": "latest"
 	},
 	"exports": {
-		"use-cases": "./src/use-case.ts",
-		"actions": "./src/action.ts",
-		"db": "./src/db.ts"
+		".": "./src/index.ts",
+		"./use-cases": "./src/use-cases/index.ts",
+		"./db": "./src/db/index.ts",
+		"./actions": "./src/actions/index.ts"
 	},
 	"devDependencies": {
 		"drizzle-kit": "^0.20.14"

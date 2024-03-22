@@ -1,10 +1,8 @@
-import { DrizzleAdapter } from "@auth/drizzle-adapter";
+import { loginSchema } from "@repo/schemas";
+import { getUserByEmail } from "@repo/server/use-cases";
 import { compare } from "bcrypt-ts";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
-import { loginSchema } from "@repo/schemas";
-
-import { getUserByEmail } from "@repo/server";
 
 export const {
 	handlers: { GET, POST },
