@@ -1,0 +1,15 @@
+{
+  "name": "@repo/server",
+  "version": "0.0.1",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "drizzle-orm": "^0.30.4",
+    "typescript": "latest"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
+  }
+}
