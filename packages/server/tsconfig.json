@@ -4,8 +4,12 @@
 		"paths": {
 			"@/*": ["./src/*"],
 		},
+		"baseUrl": ".",
+		
+		"declaration": false,
+		"declarationMap": false
 	},
 	
-	"include": ["src"],
+	"include": ["src", "../../apps/web/auth.ts"],
 	"exclude": ["node_modules", "dist"]
 }
