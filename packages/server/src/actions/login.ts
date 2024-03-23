@@ -20,7 +20,7 @@ export const loginUser = async (values: LoginSchema) => {
 			password,
 			redirectTo: DEFAULT_LOGIN_REDIRECT,
 		});
-	} catch (error: any) {
+	} catch (error: unknown) {
 		if (error instanceof AuthError) {
 			switch (error.type) {
 				case "CredentialsSignin":

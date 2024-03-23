@@ -11,9 +11,9 @@
 	},
 	"exports": {
 		".": "./src/index.ts",
-		"./use-cases": "./src/use-cases/index.ts",
-		"./db": "./src/db/index.ts",
-		"./actions": "./src/actions/index.ts"
+		"./use-cases": "./src/use-cases.ts",
+		"./db": "./src/db.ts",
+		"./actions": "./src/actions.ts"
 	},
 	"devDependencies": {
 		"drizzle-kit": "^0.20.14"

@@ -2,7 +2,7 @@
 
 import { hash } from "bcrypt-ts";
 
-import { createUser } from "@/use-cases/user/create-user";
+import { createUser } from "@/use-cases";
 import { getUserByEmail } from "@/use-cases/user/get-user";
 import { type RegisterUserSchema, registerUserSchema } from "@repo/schemas";
 

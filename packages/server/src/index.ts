@@ -1,3 +1,3 @@
-export * from './actions/index'
-export * from "./use-cases/index";
-export * from "./db/index";
+export * from "./actions";
+export * from "./use-cases";
+export * from "./db";
