@@ -1,7 +1,10 @@
+import { Button } from "@repo/ui/button";
+
 export default function Page(): JSX.Element {
 	return (
 		<div>
-			<p>opaaaaaaaaaa</p>
+			<Button></Button>
 		</div>
 	);
 }
+

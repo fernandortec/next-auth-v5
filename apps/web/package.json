@@ -9,14 +9,16 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@repo/schemas": "workspace:*",
-    "@repo/typescript-config": "*",
-    "next": "^14.1.1",
-    "next-auth": "beta",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tailwind": "^4.0.0"
-  },
+			"@repo/schemas": "workspace:*",
+			"@repo/typescript-config": "*",
+			"@repo/ui": "workspace:*",
+			"@repo/server": "workspace:*",
+			"next": "^14.1.1",
+			"next-auth": "beta",
+			"react": "^18.2.0",
+			"react-dom": "^18.2.0",
+			"tailwind": "^4.0.0"
+		},
   "devDependencies": {
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",

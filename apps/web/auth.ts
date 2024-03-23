@@ -1,5 +1,6 @@
 import { loginSchema } from "@repo/schemas";
-import { getUserByEmail } from "@repo/server/use-cases";
+import { getUserByEmail } from "@repo/server";
+
 import { compare } from "bcrypt-ts";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
