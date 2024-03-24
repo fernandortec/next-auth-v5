@@ -7,3 +7,4 @@ const connection: NeonQueryFunction<boolean, boolean> = neon(env.DATABASE_URL);
 
 export const db = drizzle(connection);
 export * from "./db/schemas";
+import {} from "@repo/"

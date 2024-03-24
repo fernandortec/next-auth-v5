@@ -1,0 +1,14 @@
+{
+	"name": "@repo/server-actions",
+	"version": "0.0.1",
+	"main": "./src/actions/index.ts",
+	"dependencies": {
+		"@repo/schemas": "workspace:*",
+		"@repo/drizzle": "workspace:*",
+		"bcrypt-ts": "^5.0.2"
+	},
+	"exports": {
+		".": "./src/actions/index.ts",
+		"./use-cases": "./src/use-cases/index.ts"
+	}
+}

@@ -1,6 +1,6 @@
 "use server";
 
-import { signIn } from "@/actions";
+import { signIn } from "@/actions/auth";
 import {
 	DEFAULT_LOGIN_REDIRECT,
 	type LoginSchema,
@@ -26,7 +26,7 @@ export const loginUser = async (values: LoginSchema) => {
 				case "CredentialsSignin":
 					return { error: "Invalid credentials!" };
 				default:
-					return { error: "Somwthing went wrong" };
+					return { error: "Something went wrong" };
 			}
 		}
 

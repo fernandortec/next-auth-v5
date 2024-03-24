@@ -18,10 +18,10 @@
     "zod": "^3.22.4"
   },
   "exports": {
-    "./button": "./components/button.tsx",
-    "./form": "./components/form.tsx",
-    "./label": "./components/label.tsx",
-    "./card": "./components/card.tsx",
-    "./input": "./components/input.tsx"
+    "./button": "./src/components/button.tsx",
+    "./form": "./src/components/form.tsx",
+    "./label": "./src/components/label.tsx",
+    "./card": "./src/components/card.tsx",
+    "./input": "./src/components/input.tsx"
   }
 }

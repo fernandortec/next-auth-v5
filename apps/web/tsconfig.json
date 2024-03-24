@@ -1,6 +1,9 @@
 {
 	"extends": "@repo/tsconfig/nextjs.json",
 	"compilerOptions": {
+		"paths": {
+			"@/*": ["./app/*"]
+		},
 		"plugins": [
 			{
 				"name": "next"
@@ -17,9 +20,5 @@
 		".next/types/**/*.ts"
 	],
 	"exclude": ["node_modules"],
-	"paths": {
-		"@/*": ["./src/*"],
-		"@/auth": ["./auth.ts"],
-		"@/routes": ["./routes.ts"]
-	},
+
 }
