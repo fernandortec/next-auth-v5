@@ -1,5 +1,5 @@
 {
-	"name": "@repo/server-actions",
+	"name": "@repo/actions",
 	"version": "0.0.1",
 	"main": "./src/actions/index.ts",
 	"dependencies": {
@@ -8,7 +8,7 @@
 		"bcrypt-ts": "^5.0.2"
 	},
 	"exports": {
-		".": "./src/actions/index.ts",
+		".": "./src/index.ts",
 		"./use-cases": "./src/use-cases/index.ts"
 	}
 }

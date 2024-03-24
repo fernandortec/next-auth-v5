@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@repo/schemas": "workspace:*",
-		"@repo/server-actions": "workspace:*",
+		"@repo/actions": "workspace:*",
 		"@repo/tsconfig": "^0.0.0",
 		"@repo/ui": "workspace:*",
 		"next": "^14.1.4",

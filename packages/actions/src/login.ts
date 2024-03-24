@@ -1,6 +1,6 @@
 "use server";
 
-import { signIn } from "@/actions/auth";
+import { signIn } from "@/auth";
 import {
 	DEFAULT_LOGIN_REDIRECT,
 	type LoginSchema,
